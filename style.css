@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    margin: 0;
+    font-family: Nunito;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: inset 1px #ccc;
+}
+
+.theme-toggle{
+    cursor: pointer;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    color: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.dark-mode{
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    flex: 1;
+}
+
+#search{
+    width: calc(100% - 25px);
+    font-size: large;
+    padding:10px 10px;
+    background-color: inherit;
+    color: inherit;
+    border:none;
+    border-radius: 8px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.search-input-wrapper{
+    position: relative;
+    width: 30%;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
+.search-fields{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.filter-regions{
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.region-filter{
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    border-radius: 8px;
+    border: solid 1px #ccc;
+    background-color: inherit;
+    color: inherit;
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.country-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 250px;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0; /* Remove extra padding */
+}
+
+.country-card:hover {
+    transform : scale(1.02);
+}
+
+.country-info {
+    padding: 0px 16px; /* Add horizontal padding if needed */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.country-info h2,
+.country-info p {
+    margin: 10px 0; /* Consistent spacing */
+    text-align: left;
+    width: 100%;
+}
+
+.dark-mode .country-card{
+    background-color: #444;
+}
+
+.country-flag{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}

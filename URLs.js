@@ -1,0 +1,2 @@
+export const fetchAllInfo = "https://restcountries.com/v3.1/independent?status=true"
+// const fetchTagInfo = "https://restcountries.com/v3.1/independent?status=true&fields=population,capital,region,name"

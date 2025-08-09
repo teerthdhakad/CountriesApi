@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="country-style.css">
+     <!-- defer prevents the DOM to get loaded before the script -->
+    <script src="country-script.js" type = "module" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h2 class = "title">Where in the world ?</h2>
+        <button class="theme-toggle">
+            <span>Dark Mode</span>
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+    <button class = "back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back
+    </button>
+    <div class = "country-details"></div>
+</body>
+</html>
